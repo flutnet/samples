@@ -1,0 +1,34 @@
+name: flutnet_notes
+description: A new flutter module project.
+version: 1.0.0+1
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.3
+  outline_material_icons: ^0.1.0
+  intl: ^0.15.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutnet_notes_bridge:
+    path: ../flutnet_notes_bridge
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/
+  fonts:
+     - family: ZillaSlab
+       fonts:
+         - asset: fonts/ZillaSlab-Regular.ttf
+         - asset: fonts/ZillaSlab-Italic.ttf
+           style: italic
+         - asset: fonts/ZillaSlab-Bold.ttf
+           weight: 700
+  module:
+    androidX: true
+    androidPackage: com.companyname.flutnet_notes
+    iosBundleIdentifier: com.companyname.flutnetNotes
+
