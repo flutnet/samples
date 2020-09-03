@@ -36,15 +36,17 @@ namespace FlutnetNotes.ServiceLibrary
         }
 
         [PlatformOperation]
-        public Task<int> SaveNoteAsync(Note note)
+        public async Task<Note> SaveNoteAsync(Note note)
         {
             if (note.ID != 0)
             {
-                return _database.UpdateAsync(note);
+                await _database.UpdateAsync(note);
+                return note;
             }
             else
             {
-                return _database.InsertAsync(note);
+                await _database.InsertAsync(note);
+                return note;
             }
         }
 

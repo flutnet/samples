@@ -169,7 +169,9 @@ class _EditNotePageState extends State<EditNotePage> {
                               'SAVE',
                               style: TextStyle(letterSpacing: 0.5),
                             ),
-                            onPressed: handleSave,
+                            onPressed: () {
+                              handleSave();
+                            },
                           ),
                         )
                       ],
@@ -187,20 +189,17 @@ class _EditNotePageState extends State<EditNotePage> {
 
   void handleSave() async {
     setState(() {
-      currentNote = currentNote.copyWith(title: titleController.text);
-      currentNote = currentNote.copyWith(content: contentController.text);
+      currentNote = currentNote.copyWith(
+        title: titleController.text ?? '',
+        content: contentController.text ?? '',
+      );
       print('Hey there ${currentNote.content}');
     });
-    if (isNoteNew) {
-      int id = await _noteDatabase.saveNoteAsync(note: currentNote);
-      var latestNote = await _noteDatabase.getNoteAsync(id: id);
-      setState(() {
-        currentNote = latestNote;
-      });
-    } else {
-      await _noteDatabase.saveNoteAsync(note: currentNote);
-    }
+
+    Note latestNote = await _noteDatabase.saveNoteAsync(note: currentNote);
+
     setState(() {
+      currentNote = latestNote;
       isNoteNew = false;
       isDirty = false;
     });

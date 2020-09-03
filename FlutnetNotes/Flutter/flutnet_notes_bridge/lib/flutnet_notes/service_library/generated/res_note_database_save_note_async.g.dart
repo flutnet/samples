@@ -8,12 +8,14 @@ part of 'res_note_database_save_note_async.dart';
 
 ResNoteDatabaseSaveNoteAsync _$ResNoteDatabaseSaveNoteAsyncFromJson(Map json) {
   return ResNoteDatabaseSaveNoteAsync(
-    returnValue: json['ReturnValue'] as int,
+    returnValue: json['ReturnValue'] == null
+        ? null
+        : Note.fromJson(json['ReturnValue'] as Map),
   );
 }
 
 Map<String, dynamic> _$ResNoteDatabaseSaveNoteAsyncToJson(
         ResNoteDatabaseSaveNoteAsync instance) =>
     <String, dynamic>{
-      'ReturnValue': instance.returnValue,
+      'ReturnValue': instance.returnValue?.toJson(),
     };

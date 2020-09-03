@@ -89,7 +89,7 @@ class NoteDatabase {
 
 
 	static const _kSaveNoteAsync = 'SaveNoteAsync(FlutnetNotes.ServiceLibrary.Note)';
-	Future<int> saveNoteAsync({
+	Future<Note> saveNoteAsync({
 		Note note,
 	}) async {
 

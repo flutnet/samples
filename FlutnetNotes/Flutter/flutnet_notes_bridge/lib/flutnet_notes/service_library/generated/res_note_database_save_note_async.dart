@@ -3,6 +3,7 @@
 // *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
+import 'package:flutnet_notes_bridge/flutnet_notes/service_library/note.dart';
 
 part 'res_note_database_save_note_async.g.dart';
 
@@ -17,8 +18,8 @@ class ResNoteDatabaseSaveNoteAsync {
 		this.returnValue,
 	});
 
-	@JsonKey(name: "ReturnValue", nullable: false)
-	final int returnValue;
+	@JsonKey(name: "ReturnValue", nullable: true)
+	final Note returnValue;
 
 
 	factory ResNoteDatabaseSaveNoteAsync.fromJson(Map<dynamic, dynamic> json) => _$ResNoteDatabaseSaveNoteAsyncFromJson(json);
