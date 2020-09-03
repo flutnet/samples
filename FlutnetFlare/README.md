@@ -12,7 +12,7 @@ The Login page was imported from the project [teddy](https://github.com/2d-inc/F
 - With Xamarin installed, clone project and open the solution file **FlutnetFlare.sln**
 - Build the **FlutnetFlare.ServiceLibrary**: this will update the **flutnet_flare_bridge** package project.
 - With Flutter 1.20.2 installed, go to `Flutter/flutnet_flare` project and run `flutter build ios-framewok --no-profile` and `flutter build aar --no-profile`
-- Run the Xamarin project form Visual Studio
+- Run the Xamarin project from Visual Studio
 
 ## Screenshots
 <img src="github_assets/screenshot.jpg" height="800">

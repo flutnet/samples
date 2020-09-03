@@ -23,7 +23,7 @@ An elegant notes taking app developed using [Flutnet](https://www.flutnet.com). 
 - With Xamarin installed, clone project and open the solution file **FlutnetNotes.sln**
 - Build the **FlutnetNotes.ServiceLibrary**: this will update the **flutnet_notes_bridge** package project.
 - With Flutter 1.20.2 installed, go to `Flutter/flutnet_notes` project and run `flutter build ios-framewok --no-profile` and `flutter build aar --no-profile`
-- Run the Xamarin project form Visual Studio
+- Run the Xamarin project from Visual Studio
 
 ## Screenshots
 <img src="github_assets/screenshot1.png" height="600">
