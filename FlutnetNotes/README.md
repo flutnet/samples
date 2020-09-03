@@ -1,6 +1,6 @@
 # Flutnet - Notes app
 
-An elegant notes taking app developed using [Flutnet](https://www.flutnet.com). The Flutter UI was imported from the project [flutter-notes-app](https://github.com/roshanrahman/flutter-notes-app). All the flutter native plugins like **sqflite** were replaced using Xamarin .NET Libraries like **SQLite-Pcl**. 
+An elegant notes taking app developed using [Flutnet](https://www.flutnet.com). The Flutter UI was imported from the project [flutter-notes-app](https://github.com/roshanrahman/flutter-notes-app). All the Flutter native plugins like **sqflite** were replaced using Xamarin .NET Libraries like **SQLite-Pcl**. 
 
 ## Features
 1. *Animated UI*: A beautiful, minimalist user interface with subtle animations.

@@ -1,14 +1,8 @@
-# Flutnet - Login app
+# Flutnet Flare - Xamarin + Flutter + Flare
 
-An elegant notes taking app developed using [Flutnet](https://www.flutnet.com). The Flutter UI was integrated using [Rive](https://rive.app/). 
-The Login page was imported from the project [teddy](https://github.com/2d-inc/Flare-Flutter/tree/master/example/teddy).
+An elegant login page developed using [Flutnet](https://www.flutnet.com). The Flutter UI was integrated using [Rive](https://rive.app/). 
+The Login page was imported from the project [teddy](https://github.com/2d-inc/Flare-Flutter/tree/master/example/teddy). In this example we show how to integrate Flare animations inside your Xamarin app thanks to Flutter as UI Layer.
 
-## Features
-1. *Animated UI*: A beautiful, minimalist user interface with subtle animations.
-2. *Dark mode*: Light and dark theme variants.
-3. *Mark notes as important*: Mark notes as important and filter them.
-4. *Search*: Search your notes.
-5. *Edit note*: Edit note that you saved previously
 
 ## Dependencies
 - flare_flutter: ^2.0.6
