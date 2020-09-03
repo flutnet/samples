@@ -30,6 +30,4 @@ An elegant notes taking app developed using [Flutnet](https://www.flutnet.com). 
 <img src="github_assets/screenshot2.png" height="600">
 <img src="github_assets/screenshot3.png" height="600">
 
-Feedback is welcome! Contact me for any info.
-
 

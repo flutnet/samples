@@ -18,6 +18,3 @@ The Login page was imported from the project [teddy](https://github.com/2d-inc/F
 <img src="github_assets/screenshot.jpg" height="800">
 
 
-Feedback is welcome! Contact me for any info.
-
-
