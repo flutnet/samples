@@ -14,7 +14,7 @@ namespace FlutnetNotes.ServiceLibrary
     }
 
     /// <summary>
-    /// Service to launch a Browser URL
+    /// Service to launch a Browser URL or Share some Info
     /// </summary>
     [PlatformService]
     public class LauncherService

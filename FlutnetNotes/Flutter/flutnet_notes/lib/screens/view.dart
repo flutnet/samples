@@ -9,6 +9,9 @@ import 'package:intl/intl.dart';
 import 'package:flutnet_notes/screens/edit.dart';
 import 'package:outline_material_icons/outline_material_icons.dart';
 
+// Platform Operation Error
+import 'package:flutnet_notes_bridge/flutnet/service_model/platform_operation_exception.dart';
+
 // Xamarin Essential Laucher Service
 import 'package:flutnet_notes_bridge/flutnet_notes/service_library/launcher_service.dart';
 
@@ -150,7 +153,11 @@ class _ViewNotePageState extends State<ViewNotePage> {
   final NoteDatabase _noteDatabase = NoteDatabase("note_database");
 
   void handleSave() async {
-    await _noteDatabase.saveNoteAsync(note: widget.currentNote);
+    try {
+      await _noteDatabase.saveNoteAsync(note: widget.currentNote);
+    } on PlatformOperationException catch (ex) {
+      print("$ex");
+    }
     widget.triggerRefetch();
   }
 
@@ -176,12 +183,16 @@ class _ViewNotePageState extends State<ViewNotePage> {
   // Laucher Service (Xamarin)
   final _launcherService = LauncherService("launcher_service");
 
-  void handleShare() {
-    _launcherService.shareText(
-      title: "${widget.currentNote.title.trim()}",
-      text:
-          '${widget.currentNote.title.trim()}\n(On: ${widget.currentNote.date.toIso8601String().substring(0, 10)})\n\n${widget.currentNote.content}',
-    );
+  void handleShare() async {
+    try {
+      await _launcherService.shareText(
+        title: "${widget.currentNote.title.trim()}",
+        text:
+            '${widget.currentNote.title.trim()}\n(On: ${widget.currentNote.date.toIso8601String().substring(0, 10)})\n\n${widget.currentNote.content}',
+      );
+    } on PlatformOperationException catch (ex) {
+      print("$ex");
+    }
   }
 
   void handleBack() {
