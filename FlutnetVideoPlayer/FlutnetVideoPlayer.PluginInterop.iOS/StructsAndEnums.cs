@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NativeLibrary
+namespace FlutnetVideoPlayer.PluginInterop
 {
 }
 
