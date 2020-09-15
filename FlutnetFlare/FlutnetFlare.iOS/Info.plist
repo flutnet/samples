@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>FlutnetFlareAnimations</string>
+	<string>FlutnetFlare</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.example.app</string>
 	<key>CFBundleShortVersionString</key>

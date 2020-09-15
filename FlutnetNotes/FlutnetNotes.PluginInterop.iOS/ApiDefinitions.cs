@@ -1,7 +1,7 @@
 ﻿using System;
 using Foundation;
 
-namespace Flutnet.PluginInterop
+namespace FlutnetNotes.PluginInterop
 {
     // @interface GeneratedPluginRegistrant : NSObject
     [BaseType(typeof(NSObject))]

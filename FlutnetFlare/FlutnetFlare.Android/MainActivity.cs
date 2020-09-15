@@ -4,11 +4,12 @@ using Android.Views;
 using Android.Runtime;
 using Android.Content.PM;
 using Flutnet.Interop.Embedding.Android;
+using Flutnet.Interop.Embedding.Engine;
 
 namespace FlutnetFlare
 {
     [
-        Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true,
+        Activity(Label = "@string/app_name", Theme = "@style/LaunchTheme", MainLauncher = true,
             // FLUTTER ACTIVITY SETUP
             HardwareAccelerated = true,
             WindowSoftInputMode = SoftInput.AdjustResize,
@@ -18,15 +19,15 @@ namespace FlutnetFlare
                                    ConfigChanges.Density | ConfigChanges.UiMode
         )
     ]
+    [MetaData("io.flutter.embedding.android.NormalTheme", Resource = "@style/AppTheme")]
+    [MetaData("io.flutter.embedding.android.SplashScreenDrawable", Resource = "@drawable/launch_background")]
     public class MainActivity : FlutterActivity
     {
-        /// <summary>
-        /// Configure the specific flutter engine id, so we reuse the same engine.
-        /// </summary>
-        public override string CachedEngineId => MainApplication.FlutterEngineId;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            // NOTE: Flutnet environment MUST be initialized BEFORE base OnCreate
+            App.Init(this);
+
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
         }
@@ -37,5 +38,23 @@ namespace FlutnetFlare
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
+        public override void ConfigureFlutterEngine(FlutterEngine flutterEngine)
+        {
+            base.ConfigureFlutterEngine(flutterEngine);
+
+            // Connect Flutter plugins (uncomment only if Flutter module uses plugins)
+            //Flutnet.Interop.Plugins.GeneratedPluginRegistrant.RegisterWith(flutterEngine);
+
+            if (App.Initialized)
+                App.ConfigureFlutnetBridge(this.FlutterEngine);
+        }
+
+        public override void CleanUpFlutterEngine(FlutterEngine flutterEngine)
+        {
+            base.CleanUpFlutterEngine(flutterEngine);
+
+            if (App.Initialized)
+                App.CleanUpFlutnetBridge();
+        }
     }
 }

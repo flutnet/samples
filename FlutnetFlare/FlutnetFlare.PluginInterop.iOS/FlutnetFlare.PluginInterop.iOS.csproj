@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D3F28998-B9E7-4F3F-9091-BCD722C6DFF9}</ProjectGuid>
+    <ProjectGuid>{DA234492-BB73-4CC5-82DB-02CB88244451}</ProjectGuid>
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Flutnet.Interop.iOS">
-      <Version>1.17.3.1</Version>
+      <Version>1.20.2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Debug' ">

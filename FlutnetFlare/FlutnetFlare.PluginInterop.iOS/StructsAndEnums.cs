@@ -1,6 +1,5 @@
 ﻿using System;
 
-namespace NativeLibrary
+namespace FlutnetFlare.PluginInterop
 {
 }
-

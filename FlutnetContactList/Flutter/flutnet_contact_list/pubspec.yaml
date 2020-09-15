@@ -1,0 +1,23 @@
+name: flutnet_contact_list
+description: A new flutter module project.
+version: 1.0.0+1
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.3
+  flutter_bloc: ^3.2.0
+  equatable: ^1.0.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutnet_contact_list_bridge:
+    path: ../flutnet_contact_list_bridge
+flutter:
+  uses-material-design: true
+  module:
+    androidX: true
+    androidPackage: com.companyname.flutnet_contact_list
+    iosBundleIdentifier: com.companyname.flutnetContactList
+...
