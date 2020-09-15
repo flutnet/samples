@@ -1,4 +1,8 @@
 # Flutnet samples
+
+> Flutnet is available in both **Community (free)** and **Commercial** editions
+
+## Overview
 A collection of open source samples that illustrate how to use [Flutnet](https://www.flutnet.com).
 
 | Example name | Screenshot |
