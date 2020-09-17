@@ -1,6 +1,7 @@
-# Flutnet samples
+# [Flutnet](https://www.flutnet.com) samples
 
-> Flutnet is available in both **Community (free)** and **Commercial** editions
+> Flutnet is available in both **Community (free)** and **Commercial** editions.
+> Follow the [Flutnet YouTube Channel](https://www.youtube.com/channel/UCMkHXUPeWEacra5BU6z9i6w).
 
 ## Overview
 A collection of open source samples that illustrate how to use [Flutnet](https://www.flutnet.com).
