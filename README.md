@@ -15,7 +15,7 @@ A collection of open source samples that illustrate how to use [Flutnet](https:/
 | Flutnet Events App  | <a href="FlutnetEvents/"> <img src="FlutnetEvents/github_assets/app.gif" height="250"> </a> |
 | Flutnet Contact List App  | <a href="FlutnetContactList/"> <img src="FlutnetContactList/github_assets/app.gif" height="250"> </a> |
 | Flutnet Video Player App  | <a href="FlutnetVideoPlayer/"> <img src="FlutnetVideoPlayer/github_assets/app.jpg" height="250"> </a> |
-| Flutnet Flare App  | <a href="FlutneFlare/"> <img src="FlutnetFlare/github_assets/app.jpg" height="250"> </a> |
+| Flutnet Flare App  | <a href="FlutnetFlare/"> <img src="FlutnetFlare/github_assets/app.jpg" height="250"> </a> |
 | Flutnet Notes App  | <a href="FlutnetNotes/"> <img src="FlutnetNotes/github_assets/app.png" height="250"> </a> |
 
 
