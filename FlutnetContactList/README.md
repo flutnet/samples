@@ -13,7 +13,7 @@ A simple contact list developed using [Flutnet](https://www.flutnet.com). All th
 - equatable: ^1.0.3
 
 
-## Run the project
+## Run the project for the first time
 
 - With Xamarin installed, clone project and open the solution file **FlutnetContactList.sln**
 - Build the **FlutnetContactList.ServiceLibrary**: this will update the **flutnet_contact_list_bridge** package project.

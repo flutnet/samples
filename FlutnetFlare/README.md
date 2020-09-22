@@ -8,7 +8,7 @@ The Login page was imported from the project [teddy](https://github.com/2d-inc/F
 - flare_flutter: ^2.0.6
 - flare_dart: ^2.3.4
 
-## Run the project
+## Run the project for the first time
 
 - With Xamarin installed, clone project and open the solution file **FlutnetFlare.sln**
 - Build the **FlutnetFlare.ServiceLibrary**: this will update the **flutnet_flare_bridge** package project.

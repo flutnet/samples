@@ -22,7 +22,7 @@ An elegant notes taking app developed using [Flutnet](https://www.flutnet.com). 
 - share: ^0.6.1+1 --> [Xamarin.Essentials](https://www.nuget.org/packages/Xamarin.Essentials/)
 - sqflite: ^1.1.5 --> [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
 
-## Run the project
+## Run the project for the first time
 
 - With Xamarin installed, clone project and open the solution file **FlutnetNotes.sln**
 - Build the **FlutnetNotes.ServiceLibrary**: this will update the **flutnet_notes_bridge** package project.

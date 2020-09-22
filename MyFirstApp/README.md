@@ -9,7 +9,7 @@ A simple app developed using [Flutnet](https://www.flutnet.com). See all the det
 
 <img src="github_assets/sketch.png" height="250" style="background-color:white; padding:10px;">
 
-## Run the project
+## Run the project for the first time
 
 - With Xamarin installed, clone project and open the solution file **MyFirstApp.sln**
 - Build the **MyFirstApp.ServiceLibrary**: this will update the **my_first_app_bridge** package project.

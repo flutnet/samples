@@ -10,7 +10,7 @@ Using [Flutnet](https://www.flutnet.com) you can integrate the most used flutter
   Your browser does not support the video tag.
 </video>
 
-## Run the project
+## Run the project for the first time
 
 - With Xamarin installed, clone project and open the solution file **FlutnetVideoPlayer.sln**
 - Build the **FlutnetVideoPlayer.ServiceLibrary**: this will update the **flutnet_video_player_bridge** package project.

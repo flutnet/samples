@@ -10,7 +10,7 @@ A simple counter app developed using [Flutnet](https://www.flutnet.com). The cou
 
 <img src="github_assets/sketch.png" height="250" style="background-color:white; padding:10px;">
 
-## Run the project
+## Run the project for the first time
 
 - With Xamarin installed, clone project and open the solution file **FlutnetEvents.sln**
 - Build the **FlutnetEvents.ServiceLibrary**: this will update the **flutnet_events_bridge** package project.
