@@ -54,7 +54,7 @@
     <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Flutnet.Interop.Android" Version="1.20.2" />
+    <PackageReference Include="Flutnet.Interop.Android" Version="1.22.0" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Debug' ">
     <LibraryProjectZip Include="../Flutter/flutnet_events/build/host/outputs/repo/com/companyname/flutnet_events/flutter_debug/1.0/flutter_debug-1.0.aar">

@@ -49,7 +49,14 @@ namespace MyFirstApp
         {
             try
             {
+                //
+		// Init the runtime using the application key (generated from the flutnet console)
+                //
                 FlutnetRuntime.Init("TRIAL-APP-KEY");
+
+                // 
+		// Register the service on the flutnet runtime
+		//  
                 FlutnetRuntime.RegisterPlatformService(new MyFirstService(), "my_first_service");
                 Initialized = true;
             }

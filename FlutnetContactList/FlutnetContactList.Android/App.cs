@@ -48,7 +48,15 @@ namespace FlutnetContactList
         {
             try
             {
+
+                //
+			    // Init the runtime using the application key (generated from the flutnet console)
+                //
                 FlutnetRuntime.Init("TRIAL-APP-KEY");
+
+                // 
+				// Register the service on the flutnet runtime
+				// 
                 FlutnetRuntime.RegisterPlatformService(new ContactService(), "contact_service");
                 Initialized = true;
             }

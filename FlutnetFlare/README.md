@@ -12,7 +12,7 @@ The Login page was imported from the project [teddy](https://github.com/2d-inc/F
 
 - With Xamarin installed, clone project and open the solution file **FlutnetFlare.sln**
 - Build the **FlutnetFlare.ServiceLibrary**: this will update the **flutnet_flare_bridge** package project.
-- With Flutter 1.20.2 installed, go to `Flutter/flutnet_flare` project and run 
+- With Flutter 1.22.0 installed, go to `Flutter/flutnet_flare` project and run 
     - `flutter build ios-framewok --no-profile` (for Flutter iOS)
     - `flutter build aar --no-profile` (for Flutter Android)
 - Before running **FlutnetFlare.Android** _ensure to manually uninstall the previus deployed application_ `com.example.app` from your device (see [Flutnet Known Issues page](https://www.flutnet.com/Download/Release-Notes/Known-Issues)). This procedure must be done every time you make changes to the Flutter module and you want these changes to be reflected inside the Xamarin Android application

@@ -49,6 +49,9 @@ namespace FlutnetNotes
         {
             try
             {
+                //
+			    // Init the runtime using the application key (generated from the flutnet console)
+                //
                 FlutnetRuntime.Init("TRIAL-APP-KEY");
 
                 //
