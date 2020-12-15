@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_notes_bridge/flutnet_notes/service_library/generated/res_launcher_service_open_browser.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 

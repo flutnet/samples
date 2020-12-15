@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_counter_bridge/flutnet_counter/service_library/generated/res_counter_service_get_value.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 

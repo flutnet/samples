@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_errors_bridge/flutnet_errors/service_library/services/generated/cmd_login_service_login.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 

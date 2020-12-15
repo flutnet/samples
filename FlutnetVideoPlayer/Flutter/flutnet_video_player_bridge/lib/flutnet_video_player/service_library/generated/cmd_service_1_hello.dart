@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_video_player_bridge/flutnet_video_player/service_library/generated/cmd_service_1_hello.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 

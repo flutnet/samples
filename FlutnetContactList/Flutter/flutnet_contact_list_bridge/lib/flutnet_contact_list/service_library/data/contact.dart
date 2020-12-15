@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 import 'dart:typed_data';

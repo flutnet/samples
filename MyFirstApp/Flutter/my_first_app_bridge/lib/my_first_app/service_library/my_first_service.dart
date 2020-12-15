@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:my_first_app_bridge/my_first_app/service_library/my_first_service.dart';
+// *************************************
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:my_first_app_bridge/flutnet/service_model/platform_operation_exception.dart';

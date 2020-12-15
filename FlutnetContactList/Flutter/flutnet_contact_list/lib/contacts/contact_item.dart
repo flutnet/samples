@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutnet_contact_list_bridge/index.dart';
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
 
 ///
 /// This widget is an item on the contact list:

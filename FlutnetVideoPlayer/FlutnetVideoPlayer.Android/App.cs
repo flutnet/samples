@@ -50,13 +50,13 @@ namespace FlutnetVideoPlayer
             try
             {
                 //
-		// Init the runtime using the application key (generated from the flutnet console)
+		        // Init the runtime using the application key (generated from the flutnet console)
                 //
                 FlutnetRuntime.Init("TRIAL-APP-KEY");
 
                 // 
-		// Register the service on the flutnet runtime
-		// 
+		        // Register the service on the flutnet runtime
+		        // 
                 FlutnetRuntime.RegisterPlatformService(new Service1(), "my_service");
                 Initialized = true;
             }

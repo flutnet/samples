@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:meta/meta.dart';
 import 'package:flutnet_contact_list/contacts/index.dart';
-import 'package:flutnet_contact_list_bridge/index.dart';
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/service/contact_service.dart';
 
 @immutable
 abstract class ContactsPageEvent {

@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/service/contact_service.dart';
+// *************************************
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutnet_contact_list_bridge/flutnet/service_model/platform_operation_exception.dart';

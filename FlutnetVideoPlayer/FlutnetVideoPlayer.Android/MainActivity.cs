@@ -43,7 +43,7 @@ namespace FlutnetVideoPlayer
             base.ConfigureFlutterEngine(flutterEngine);
 
             // Connect Flutter plugins (uncomment only if Flutter module uses plugins)
-            //Flutnet.Interop.Plugins.GeneratedPluginRegistrant.RegisterWith(flutterEngine);
+            Flutnet.Interop.Plugins.GeneratedPluginRegistrant.RegisterWith(flutterEngine);
 
             if (App.Initialized)
                 App.ConfigureFlutnetBridge(this.FlutterEngine);

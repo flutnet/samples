@@ -77,7 +77,7 @@
       <Version>1.0.3</Version>
     </PackageReference>
     <PackageReference Include="Flutnet.Interop.iOS">
-      <Version>1.22.0</Version>
+      <Version>1.22.5</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="sqlite-net-pcl">

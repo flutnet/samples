@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_contact_list_bridge/flutnet/data/flutnet_exception.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 import 'package:flutnet_contact_list_bridge/flutnet/data/flutnet_error_code.dart';

@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_flare_bridge/flutnet/data/flutnet_error_code.dart';
+// *************************************
 
 enum FlutnetErrorCode {
 	OperationNotImplemented,

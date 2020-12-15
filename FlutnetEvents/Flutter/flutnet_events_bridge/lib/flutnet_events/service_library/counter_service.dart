@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_events_bridge/flutnet_events/service_library/counter_service.dart';
+// *************************************
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutnet_events_bridge/flutnet/service_model/platform_operation_exception.dart';

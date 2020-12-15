@@ -1,5 +1,4 @@
-import 'package:flutnet_contact_list_bridge/index.dart';
-
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 

@@ -1,6 +1,8 @@
 ﻿// *************************************
 //         NOT EDIT THIS FILE          *
 // *************************************
+// IMPORT FILE: import 'package:flutnet_dialer_bridge/flutnet/service_model/platform_operation_exception.dart';
+// *************************************
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 import 'package:flutnet_dialer_bridge/flutnet/data/flutnet_exception.dart';

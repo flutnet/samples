@@ -1,5 +1,5 @@
 import 'package:flutnet_contact_list/ui/item_loader.dart';
-import 'package:flutnet_contact_list_bridge/index.dart';
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
 
 import 'index.dart';
 import 'package:flutter/material.dart';

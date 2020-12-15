@@ -481,8 +481,10 @@ class _WebSocketChannel {
     if (_instance == null) {
       StreamController<_FlutnetEventInfo> controller =
           StreamController<_FlutnetEventInfo>();
-      Stream<_FlutnetEventInfo> outEvent =
-          controller.stream.asBroadcastStream();
+      Stream<_FlutnetEventInfo> outEvent = controller.stream.asBroadcastStream(
+        // Fix thanks to Remi Rousselet --> https://twitter.com/remi_rousselet/status/1319677094318788608?s=19
+        onCancel: (subscription) => subscription.cancel(),
+      );
       _instance =
           _WebSocketChannel._internal(controller, controller.sink, outEvent);
     }
