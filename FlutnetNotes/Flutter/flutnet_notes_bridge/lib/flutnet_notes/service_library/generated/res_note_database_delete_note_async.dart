@@ -13,7 +13,7 @@ part 'res_note_database_delete_note_async.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResNoteDatabaseDeleteNoteAsync {
+class ResNoteDatabaseDeleteNoteAsync extends Object {
 
 	ResNoteDatabaseDeleteNoteAsync({
 		this.returnValue,
@@ -26,5 +26,7 @@ class ResNoteDatabaseDeleteNoteAsync {
 	factory ResNoteDatabaseDeleteNoteAsync.fromJson(Map<dynamic, dynamic> json) => _$ResNoteDatabaseDeleteNoteAsyncFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResNoteDatabaseDeleteNoteAsyncToJson(this);
+
+
 
 }

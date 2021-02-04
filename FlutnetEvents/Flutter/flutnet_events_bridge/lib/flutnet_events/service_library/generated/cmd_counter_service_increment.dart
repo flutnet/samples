@@ -13,7 +13,7 @@ part 'cmd_counter_service_increment.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdCounterServiceIncrement {
+class CmdCounterServiceIncrement extends Object {
 
 	CmdCounterServiceIncrement();
 
@@ -21,5 +21,7 @@ class CmdCounterServiceIncrement {
 	factory CmdCounterServiceIncrement.fromJson(Map<dynamic, dynamic> json) => _$CmdCounterServiceIncrementFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdCounterServiceIncrementToJson(this);
+
+
 
 }

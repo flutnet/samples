@@ -14,7 +14,7 @@ part 'cmd_note_database_delete_note_async.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdNoteDatabaseDeleteNoteAsync {
+class CmdNoteDatabaseDeleteNoteAsync extends Object {
 
 	CmdNoteDatabaseDeleteNoteAsync({
 		this.note,
@@ -27,5 +27,7 @@ class CmdNoteDatabaseDeleteNoteAsync {
 	factory CmdNoteDatabaseDeleteNoteAsync.fromJson(Map<dynamic, dynamic> json) => _$CmdNoteDatabaseDeleteNoteAsyncFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdNoteDatabaseDeleteNoteAsyncToJson(this);
+
+
 
 }

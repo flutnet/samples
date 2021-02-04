@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'contact.dart';
 
@@ -12,7 +12,7 @@ Contact _$ContactFromJson(Map json) {
     lastname: json['Lastname'] as String,
     phoneNumber: json['PhoneNumber'] as String,
     nationId: json['NationId'] as int,
-    image: const Uint8Converter().fromJson(json['Image']),
+    image: const Uint8Converter().fromJsonDynamic(json['Image']),
   );
 }
 
@@ -21,5 +21,5 @@ Map<String, dynamic> _$ContactToJson(Contact instance) => <String, dynamic>{
       'Lastname': instance.lastname,
       'PhoneNumber': instance.phoneNumber,
       'NationId': instance.nationId,
-      'Image': const Uint8Converter().toJson(instance.image),
+      'Image': const Uint8Converter().toJsonDynamic(instance.image),
     };

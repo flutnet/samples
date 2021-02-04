@@ -14,7 +14,7 @@ part 'res_contact_service_get_contacts.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResContactServiceGetContacts {
+class ResContactServiceGetContacts extends Object {
 
 	ResContactServiceGetContacts({
 		this.returnValue,
@@ -27,5 +27,7 @@ class ResContactServiceGetContacts {
 	factory ResContactServiceGetContacts.fromJson(Map<dynamic, dynamic> json) => _$ResContactServiceGetContactsFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResContactServiceGetContactsToJson(this);
+
+
 
 }

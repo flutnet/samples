@@ -13,7 +13,7 @@ part 'cmd_service_1_hello.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdService1Hello {
+class CmdService1Hello extends Object {
 
 	CmdService1Hello({
 		this.name,
@@ -26,5 +26,7 @@ class CmdService1Hello {
 	factory CmdService1Hello.fromJson(Map<dynamic, dynamic> json) => _$CmdService1HelloFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdService1HelloToJson(this);
+
+
 
 }

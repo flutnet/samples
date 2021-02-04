@@ -13,7 +13,7 @@ part 'cmd_preference_service_get_theme.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdPreferenceServiceGetTheme {
+class CmdPreferenceServiceGetTheme extends Object {
 
 	CmdPreferenceServiceGetTheme();
 
@@ -21,5 +21,7 @@ class CmdPreferenceServiceGetTheme {
 	factory CmdPreferenceServiceGetTheme.fromJson(Map<dynamic, dynamic> json) => _$CmdPreferenceServiceGetThemeFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdPreferenceServiceGetThemeToJson(this);
+
+
 
 }

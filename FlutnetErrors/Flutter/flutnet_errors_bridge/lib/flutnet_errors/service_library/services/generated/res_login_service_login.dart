@@ -14,7 +14,7 @@ part 'res_login_service_login.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResLoginServiceLogin {
+class ResLoginServiceLogin extends Object {
 
 	ResLoginServiceLogin({
 		this.returnValue,
@@ -27,5 +27,7 @@ class ResLoginServiceLogin {
 	factory ResLoginServiceLogin.fromJson(Map<dynamic, dynamic> json) => _$ResLoginServiceLoginFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResLoginServiceLoginToJson(this);
+
+
 
 }

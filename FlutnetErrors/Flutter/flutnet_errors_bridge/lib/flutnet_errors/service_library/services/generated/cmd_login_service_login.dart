@@ -13,7 +13,7 @@ part 'cmd_login_service_login.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdLoginServiceLogin {
+class CmdLoginServiceLogin extends Object {
 
 	CmdLoginServiceLogin({
 		this.username,
@@ -34,5 +34,7 @@ class CmdLoginServiceLogin {
 	factory CmdLoginServiceLogin.fromJson(Map<dynamic, dynamic> json) => _$CmdLoginServiceLoginFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdLoginServiceLoginToJson(this);
+
+
 
 }

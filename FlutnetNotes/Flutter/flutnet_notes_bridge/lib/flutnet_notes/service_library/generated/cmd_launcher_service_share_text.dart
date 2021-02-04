@@ -13,7 +13,7 @@ part 'cmd_launcher_service_share_text.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdLauncherServiceShareText {
+class CmdLauncherServiceShareText extends Object {
 
 	CmdLauncherServiceShareText({
 		this.title,
@@ -30,5 +30,7 @@ class CmdLauncherServiceShareText {
 	factory CmdLauncherServiceShareText.fromJson(Map<dynamic, dynamic> json) => _$CmdLauncherServiceShareTextFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdLauncherServiceShareTextToJson(this);
+
+
 
 }

@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'res_contact_service_get_contacts.dart';
 
@@ -9,7 +9,7 @@ part of 'res_contact_service_get_contacts.dart';
 ResContactServiceGetContacts _$ResContactServiceGetContactsFromJson(Map json) {
   return ResContactServiceGetContacts(
     returnValue: (json['ReturnValue'] as List)
-        ?.map((e) => e == null ? null : Contact.fromJson(e as Map))
+        ?.map((e) => e == null ? null : Contact.fromJsonDynamic(e as Map))
         ?.toList(),
   );
 }
@@ -17,5 +17,5 @@ ResContactServiceGetContacts _$ResContactServiceGetContactsFromJson(Map json) {
 Map<String, dynamic> _$ResContactServiceGetContactsToJson(
         ResContactServiceGetContacts instance) =>
     <String, dynamic>{
-      'ReturnValue': instance.returnValue?.map((e) => e?.toJson())?.toList(),
+      'ReturnValue': instance.returnValue?.map((e) => e?.toJsonDynamic())?.toList(),
     };

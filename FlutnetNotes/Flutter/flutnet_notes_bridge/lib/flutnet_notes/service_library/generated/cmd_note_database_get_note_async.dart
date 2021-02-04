@@ -13,7 +13,7 @@ part 'cmd_note_database_get_note_async.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdNoteDatabaseGetNoteAsync {
+class CmdNoteDatabaseGetNoteAsync extends Object {
 
 	CmdNoteDatabaseGetNoteAsync({
 		this.id,
@@ -26,5 +26,7 @@ class CmdNoteDatabaseGetNoteAsync {
 	factory CmdNoteDatabaseGetNoteAsync.fromJson(Map<dynamic, dynamic> json) => _$CmdNoteDatabaseGetNoteAsyncFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdNoteDatabaseGetNoteAsyncToJson(this);
+
+
 
 }

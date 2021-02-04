@@ -13,7 +13,7 @@ part 'cmd_my_first_service_get_message.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdMyFirstServiceGetMessage {
+class CmdMyFirstServiceGetMessage extends Object {
 
 	CmdMyFirstServiceGetMessage();
 
@@ -21,5 +21,7 @@ class CmdMyFirstServiceGetMessage {
 	factory CmdMyFirstServiceGetMessage.fromJson(Map<dynamic, dynamic> json) => _$CmdMyFirstServiceGetMessageFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdMyFirstServiceGetMessageToJson(this);
+
+
 
 }

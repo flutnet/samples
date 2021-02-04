@@ -13,7 +13,7 @@ part 'res_launcher_service_open_browser.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResLauncherServiceOpenBrowser {
+class ResLauncherServiceOpenBrowser extends Object {
 
 	ResLauncherServiceOpenBrowser();
 
@@ -21,5 +21,7 @@ class ResLauncherServiceOpenBrowser {
 	factory ResLauncherServiceOpenBrowser.fromJson(Map<dynamic, dynamic> json) => _$ResLauncherServiceOpenBrowserFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResLauncherServiceOpenBrowserToJson(this);
+
+
 
 }

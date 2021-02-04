@@ -14,7 +14,7 @@ part 'res_note_database_save_note_async.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResNoteDatabaseSaveNoteAsync {
+class ResNoteDatabaseSaveNoteAsync extends Object {
 
 	ResNoteDatabaseSaveNoteAsync({
 		this.returnValue,
@@ -27,5 +27,7 @@ class ResNoteDatabaseSaveNoteAsync {
 	factory ResNoteDatabaseSaveNoteAsync.fromJson(Map<dynamic, dynamic> json) => _$ResNoteDatabaseSaveNoteAsyncFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResNoteDatabaseSaveNoteAsyncToJson(this);
+
+
 
 }

@@ -32,5 +32,40 @@ class LoginException extends PlatformOperationException {
 
 	Map<String, dynamic> toJson() => _$LoginExceptionToJson(this);
 
+	/// Mapping between NET types and Dart Type
+	static final Map<String, LoginException Function(Map<String, dynamic>)> 	_typeToLoginException = {
+		'FlutnetErrors.ServiceLibrary.Errors.LoginException, FlutnetErrors.ServiceLibrary': (Map<String, dynamic> json) => LoginException.fromJson(json),
+	};
+
+
+	/// Dynamic deserialization
+	factory LoginException.fromJsonDynamic(Map<String, dynamic> json) {
+
+		// Nothing to do
+		if (json == null) return null;
+
+		try {
+			String typeKey = json['\$type'];
+			// Default type key
+			typeKey ??= 'FlutnetErrors.ServiceLibrary.Errors.LoginException, FlutnetErrors.ServiceLibrary';
+			var fromJson = 	_typeToLoginException.containsKey(typeKey)
+			 ? 	_typeToLoginException[typeKey] 
+			 : null;
+
+			///! REAL DESERIALIZATION PROCESS
+			return fromJson(json);
+
+		} catch (e) {
+		  throw new Exception('Error during lib deserialization process: $json');
+		}
+	}
+
+
+
+	@override
+	String toString() {
+		return toJson().toString();
+	}
+
 
 }

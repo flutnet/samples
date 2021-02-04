@@ -13,7 +13,7 @@ part 'res_i_dialer_service_open_dialer.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResIDialerServiceOpenDialer {
+class ResIDialerServiceOpenDialer extends Object {
 
 	ResIDialerServiceOpenDialer();
 
@@ -21,5 +21,7 @@ class ResIDialerServiceOpenDialer {
 	factory ResIDialerServiceOpenDialer.fromJson(Map<dynamic, dynamic> json) => _$ResIDialerServiceOpenDialerFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResIDialerServiceOpenDialerToJson(this);
+
+
 
 }

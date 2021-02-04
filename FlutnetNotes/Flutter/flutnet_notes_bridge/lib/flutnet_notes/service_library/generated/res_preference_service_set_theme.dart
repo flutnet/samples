@@ -13,7 +13,7 @@ part 'res_preference_service_set_theme.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResPreferenceServiceSetTheme {
+class ResPreferenceServiceSetTheme extends Object {
 
 	ResPreferenceServiceSetTheme();
 
@@ -21,5 +21,7 @@ class ResPreferenceServiceSetTheme {
 	factory ResPreferenceServiceSetTheme.fromJson(Map<dynamic, dynamic> json) => _$ResPreferenceServiceSetThemeFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResPreferenceServiceSetThemeToJson(this);
+
+
 
 }

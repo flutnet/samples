@@ -13,7 +13,7 @@ part 'cmd_contact_service_query_contacts.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdContactServiceQueryContacts {
+class CmdContactServiceQueryContacts extends Object {
 
 	CmdContactServiceQueryContacts({
 		this.name,
@@ -38,5 +38,7 @@ class CmdContactServiceQueryContacts {
 	factory CmdContactServiceQueryContacts.fromJson(Map<dynamic, dynamic> json) => _$CmdContactServiceQueryContactsFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdContactServiceQueryContactsToJson(this);
+
+
 
 }

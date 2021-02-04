@@ -14,7 +14,7 @@ part 'note.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class Note {
+class Note extends Object {
 
 	Note({
 		this.iD,
@@ -44,5 +44,80 @@ class Note {
 	factory Note.fromJson(Map<dynamic, dynamic> json) => _$NoteFromJson(json);
 
 	Map<String, dynamic> toJson() => _$NoteToJson(this);
+
+	/// Mapping between NET types and Dart Type
+	static final Map<String, Note Function(Map<String, dynamic>)> 	_typeToNote = {
+		'FlutnetNotes.ServiceLibrary.Note, FlutnetNotes.ServiceLibrary': (Map<String, dynamic> json) => Note.fromJson(json),
+	};
+
+
+	/// Dynamic deserialization
+	factory Note.fromJsonDynamic(Map<String, dynamic> json) {
+
+		// Nothing to do
+		if (json == null) return null;
+
+		try {
+			String typeKey = json['\$type'];
+			// Default type key
+			typeKey ??= 'FlutnetNotes.ServiceLibrary.Note, FlutnetNotes.ServiceLibrary';
+			var fromJson = 	_typeToNote.containsKey(typeKey)
+			 ? 	_typeToNote[typeKey] 
+			 : null;
+
+			///! REAL DESERIALIZATION PROCESS
+			return fromJson(json);
+
+		} catch (e) {
+		  throw new Exception('Error during lib deserialization process: $json');
+		}
+	}
+
+	/// Mapping between Dart Type and NET types
+	static final Map<Type, String> 	_noteToType = {
+		Note().runtimeType : "FlutnetNotes.ServiceLibrary.Note, FlutnetNotes.ServiceLibrary",
+	};
+
+
+	/// Dynamic serialization
+	Map<String, dynamic> toJsonDynamic() {
+
+		try {
+			// Get the NET Type from the Dart runtime type
+			final String typeKey = 
+				_noteToType.containsKey(this.runtimeType)
+			 ? 	_noteToType[this.runtimeType] 
+			 : null;
+
+			/// Wrap the object with his NET type key
+			final Map<String, dynamic> map = {
+				'\$type' : typeKey,
+			};
+			map.addAll(this.toJson());
+			return map;
+
+		} catch (e) {
+		  throw new Exception('Error during lib serialization process: ${this.runtimeType}');
+		}
+	}
+
+
+	// Copy with method for the class
+	Note copyWith({
+		int iD,
+		String title,
+		String content,
+		bool isImportant,
+		DateTime date,
+	}) {
+	return Note(
+		iD: iD ?? this.iD,
+		title: title ?? this.title,
+		content: content ?? this.content,
+		isImportant: isImportant ?? this.isImportant,
+		date: date ?? this.date,
+	);
+	}
+
 
 }

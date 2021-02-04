@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'res_contact_service_query_contacts.dart';
 
@@ -11,12 +11,12 @@ ResContactServiceQueryContacts _$ResContactServiceQueryContactsFromJson(
   return ResContactServiceQueryContacts(
     returnValue: json['ReturnValue'] == null
         ? null
-        : ContactQueryResult.fromJson(json['ReturnValue'] as Map),
+        : ContactQueryResult.fromJsonDynamic(json['ReturnValue'] as Map),
   );
 }
 
 Map<String, dynamic> _$ResContactServiceQueryContactsToJson(
         ResContactServiceQueryContacts instance) =>
     <String, dynamic>{
-      'ReturnValue': instance.returnValue?.toJson(),
+      'ReturnValue': instance.returnValue?.toJsonDynamic(),
     };

@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'note.dart';
 
@@ -12,7 +12,7 @@ Note _$NoteFromJson(Map json) {
     title: json['Title'] as String,
     content: json['Content'] as String,
     isImportant: json['IsImportant'] as bool,
-    date: const DateTimeConverter().fromJson(json['Date']),
+    date: const DateTimeConverter().fromJsonDynamic(json['Date']),
   );
 }
 
@@ -21,5 +21,5 @@ Map<String, dynamic> _$NoteToJson(Note instance) => <String, dynamic>{
       'Title': instance.title,
       'Content': instance.content,
       'IsImportant': instance.isImportant,
-      'Date': const DateTimeConverter().toJson(instance.date),
+      'Date': const DateTimeConverter().toJsonDynamic(instance.date),
     };

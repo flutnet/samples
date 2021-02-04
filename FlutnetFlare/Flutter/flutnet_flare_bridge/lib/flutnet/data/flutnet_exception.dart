@@ -32,5 +32,40 @@ class FlutnetException extends PlatformOperationException {
 
 	Map<String, dynamic> toJson() => _$FlutnetExceptionToJson(this);
 
+	/// Mapping between NET types and Dart Type
+	static final Map<String, FlutnetException Function(Map<String, dynamic>)> 	_typeToFlutnetException = {
+		'Flutnet.Data.FlutnetException, Flutnet': (Map<String, dynamic> json) => FlutnetException.fromJson(json),
+	};
+
+
+	/// Dynamic deserialization
+	factory FlutnetException.fromJsonDynamic(Map<String, dynamic> json) {
+
+		// Nothing to do
+		if (json == null) return null;
+
+		try {
+			String typeKey = json['\$type'];
+			// Default type key
+			typeKey ??= 'Flutnet.Data.FlutnetException, Flutnet';
+			var fromJson = 	_typeToFlutnetException.containsKey(typeKey)
+			 ? 	_typeToFlutnetException[typeKey] 
+			 : null;
+
+			///! REAL DESERIALIZATION PROCESS
+			return fromJson(json);
+
+		} catch (e) {
+		  throw new Exception('Error during lib deserialization process: $json');
+		}
+	}
+
+
+
+	@override
+	String toString() {
+		return toJson().toString();
+	}
+
 
 }

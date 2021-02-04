@@ -28,9 +28,10 @@ class PlatformOperationException extends Object implements Exception {
 
 	Map<String, dynamic> toJson() => _$PlatformOperationExceptionToJson(this);
 
+	/// Mapping between NET types and Dart Type
 	static final Map<String, PlatformOperationException Function(Map<String, dynamic>)> 	_typeToPlatformOperationException = {
-		'Flutnet.Data.FlutnetException': (Map<String, dynamic> json) => FlutnetException.fromJson(json),
-		'Flutnet.ServiceModel.PlatformOperationException': (Map<String, dynamic> json) => PlatformOperationException.fromJson(json),
+		'Flutnet.Data.FlutnetException, Flutnet': (Map<String, dynamic> json) => FlutnetException.fromJson(json),
+		'Flutnet.ServiceModel.PlatformOperationException, Flutnet.ServiceModel': (Map<String, dynamic> json) => PlatformOperationException.fromJson(json),
 	};
 
 
@@ -38,23 +39,53 @@ class PlatformOperationException extends Object implements Exception {
 	factory PlatformOperationException.fromJsonDynamic(Map<String, dynamic> json) {
 
 		// Nothing to do
-		if (json == null || json.isEmpty) return null;
+		if (json == null) return null;
 
 		try {
-			String typeKey = json.keys.first;
+			String typeKey = json['\$type'];
+			// Default type key
+			typeKey ??= 'Flutnet.ServiceModel.PlatformOperationException, Flutnet.ServiceModel';
 			var fromJson = 	_typeToPlatformOperationException.containsKey(typeKey)
 			 ? 	_typeToPlatformOperationException[typeKey] 
 			 : null;
 
-			Map<String, dynamic> payload = json[typeKey];
-
 			///! REAL DESERIALIZATION PROCESS
-			return fromJson(payload);
+			return fromJson(json);
 
 		} catch (e) {
 		  throw new Exception('Error during lib deserialization process: $json');
 		}
 	}
+
+	/// Mapping between Dart Type and NET types
+	static final Map<Type, String> 	_platformOperationExceptionToType = {
+		FlutnetException().runtimeType : "Flutnet.Data.FlutnetException, Flutnet",
+		PlatformOperationException().runtimeType : "Flutnet.ServiceModel.PlatformOperationException, Flutnet.ServiceModel",
+	};
+
+
+	/// Dynamic serialization
+	Map<String, dynamic> toJsonDynamic() {
+
+		try {
+			// Get the NET Type from the Dart runtime type
+			final String typeKey = 
+				_platformOperationExceptionToType.containsKey(this.runtimeType)
+			 ? 	_platformOperationExceptionToType[this.runtimeType] 
+			 : null;
+
+			/// Wrap the object with his NET type key
+			final Map<String, dynamic> map = {
+				'\$type' : typeKey,
+			};
+			map.addAll(this.toJson());
+			return map;
+
+		} catch (e) {
+		  throw new Exception('Error during lib serialization process: ${this.runtimeType}');
+		}
+	}
+
 
 
 	@override

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_app_bridge/index.dart';
+import 'package:my_first_app_bridge/my_first_app/service_library/my_first_service.dart';
+import 'package:my_first_app_bridge/flutnet_bridge.dart';
 
 void main() {
+  // Configure the bridge (PlatformChannel vs WebSocket)
+  FlutnetBridgeConfig.mode = FlutnetBridgeMode.PlatformChannel;
   runApp(MyApp());
 }
 

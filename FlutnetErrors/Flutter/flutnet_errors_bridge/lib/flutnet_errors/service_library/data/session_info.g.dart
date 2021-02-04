@@ -1,4 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+﻿// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'session_info.dart';
 
@@ -9,12 +9,12 @@ part of 'session_info.dart';
 SessionInfo _$SessionInfoFromJson(Map json) {
   return SessionInfo(
     token: json['Token'] as String,
-    lastLogin: const DateTimeConverter().fromJson(json['LastLogin']),
+    lastLogin: const DateTimeConverter().fromJsonDynamic(json['LastLogin']),
   );
 }
 
 Map<String, dynamic> _$SessionInfoToJson(SessionInfo instance) =>
     <String, dynamic>{
       'Token': instance.token,
-      'LastLogin': const DateTimeConverter().toJson(instance.lastLogin),
+      'LastLogin': const DateTimeConverter().toJsonDynamic(instance.lastLogin),
     };

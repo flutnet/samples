@@ -25,7 +25,7 @@ class CounterService {
 		this.instanceId,
 	) : _valueChanged = FlutnetBridge()
 						.events( instanceId: instanceId, event: 'valueChanged')
-						.map((_) => CounterChangedArgs.fromJson(_));
+						.map((_) => CounterChangedArgs.fromJsonDynamic(_));
 
 	final String instanceId;
 

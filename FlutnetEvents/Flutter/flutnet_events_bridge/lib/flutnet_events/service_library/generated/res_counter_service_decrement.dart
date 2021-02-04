@@ -13,7 +13,7 @@ part 'res_counter_service_decrement.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResCounterServiceDecrement {
+class ResCounterServiceDecrement extends Object {
 
 	ResCounterServiceDecrement();
 
@@ -21,5 +21,7 @@ class ResCounterServiceDecrement {
 	factory ResCounterServiceDecrement.fromJson(Map<dynamic, dynamic> json) => _$ResCounterServiceDecrementFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResCounterServiceDecrementToJson(this);
+
+
 
 }

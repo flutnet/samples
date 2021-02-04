@@ -13,7 +13,7 @@ part 'cmd_launcher_service_open_browser.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class CmdLauncherServiceOpenBrowser {
+class CmdLauncherServiceOpenBrowser extends Object {
 
 	CmdLauncherServiceOpenBrowser({
 		this.uri,
@@ -26,5 +26,7 @@ class CmdLauncherServiceOpenBrowser {
 	factory CmdLauncherServiceOpenBrowser.fromJson(Map<dynamic, dynamic> json) => _$CmdLauncherServiceOpenBrowserFromJson(json);
 
 	Map<String, dynamic> toJson() => _$CmdLauncherServiceOpenBrowserToJson(this);
+
+
 
 }

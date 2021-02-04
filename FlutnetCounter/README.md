@@ -13,7 +13,7 @@ A simple counter app developed using [Flutnet](https://www.flutnet.com). See all
 
 - With Xamarin installed, clone project and open the solution file **FlutnetCounter.sln**
 - Build the **FlutnetCounter.ServiceLibrary**: this will update the **flutnet_counter_bridge** package project.
-- With Flutter 1.22.5 installed, go to `Flutter/flutnet_counter` project and run 
+- With Flutter 1.22.6 installed, go to `Flutter/flutnet_counter` project and run 
     - `flutter build ios-framework --no-profile` (for Flutter iOS)
     - `flutter build aar --no-profile` (for Flutter Android)
 - Before running **FlutnetCounter.Android** _ensure to manually uninstall the previus deployed application_ `com.example.app` from your device (see [Flutnet Known Issues page](https://www.flutnet.com/Download/Release-Notes/Known-Issues)). This procedure must be done every time you make changes to the Flutter module and you want these changes to be reflected inside the Xamarin Android application

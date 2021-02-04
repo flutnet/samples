@@ -13,7 +13,7 @@ part 'res_launcher_service_share_text.g.dart';
 /// the star denotes the source file name.
 @immutable
 @JsonSerializable(nullable: true, explicitToJson: true, anyMap: true)
-class ResLauncherServiceShareText {
+class ResLauncherServiceShareText extends Object {
 
 	ResLauncherServiceShareText();
 
@@ -21,5 +21,7 @@ class ResLauncherServiceShareText {
 	factory ResLauncherServiceShareText.fromJson(Map<dynamic, dynamic> json) => _$ResLauncherServiceShareTextFromJson(json);
 
 	Map<String, dynamic> toJson() => _$ResLauncherServiceShareTextToJson(this);
+
+
 
 }
