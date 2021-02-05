@@ -1,6 +1,6 @@
 # Flutnet - Animals app
 
-A simple app developed using [Flutnet](https://www.flutnet.com) that show a list of animals. The main part of this project is to show the new important feature of Flutnet, that now allow [PlatformData](https://www.flutnet.com/Documentation/Introduction/Platform-Services-Data-Events) object to support **hineritance**.
+A simple app developed using [Flutnet](https://www.flutnet.com) that show a list of animals. The main part of this project is to show the new important feature of Flutnet, that now allow [PlatformData](https://www.flutnet.com/Documentation/Introduction/Platform-Services-Data-Events) object to support **inheritance**.
 
 <img src="github_assets/sketch.png" width="700" style="background-color:white; padding:10px;">
 
