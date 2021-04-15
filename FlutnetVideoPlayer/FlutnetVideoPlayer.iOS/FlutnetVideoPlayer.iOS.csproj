@@ -26,6 +26,7 @@
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <AssemblyName>FlutnetVideoPlayer.iOS</AssemblyName>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -36,6 +37,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <AssemblyName>FlutnetVideoPlayer.iOS</AssemblyName>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,9 +50,10 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    
     <MtouchDebug>true</MtouchDebug>
     <MtouchLink>SdkOnly</MtouchLink>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -59,7 +63,9 @@
     <WarningLevel>4</WarningLevel>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -71,13 +77,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Flutnet.ServiceModel">
-      <Version>1.0.0</Version>
+      <Version>2.0.0</Version>
     </PackageReference>
     <PackageReference Include="Flutnet.iOS">
-      <Version>1.0.5</Version>
+      <Version>2.0.0</Version>
     </PackageReference>
     <PackageReference Include="Flutnet.Interop.iOS">
-      <Version>1.22.6</Version>
+      <Version>2.0.4</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
@@ -160,13 +166,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Debug' ">
-    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Debug/App.framework">
+    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Debug/App.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Release' ">
-    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Release/App.framework">
+    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Release/App.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>

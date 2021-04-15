@@ -48,17 +48,17 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Flutnet.Interop.iOS">
-      <Version>1.22.6</Version>
+      <Version>2.0.4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Debug' ">
-    <NativeReference Include="../Flutter/flutnet_notes/build/ios/framework/Debug/FlutterPluginRegistrant.framework">
+    <NativeReference Include="../Flutter/flutnet_notes/build/ios/framework/Debug/FlutterPluginRegistrant.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Release' ">
-    <NativeReference Include="../Flutter/flutnet_notes/build/ios/framework/Release/FlutterPluginRegistrant.framework">
+    <NativeReference Include="../Flutter/flutnet_notes/build/ios/framework/Release/FlutterPluginRegistrant.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>

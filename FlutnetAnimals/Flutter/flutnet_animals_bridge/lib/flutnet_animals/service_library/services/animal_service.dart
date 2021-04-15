@@ -7,9 +7,9 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutnet_animals_bridge/flutnet/service_model/platform_operation_exception.dart';
 import 'package:flutnet_animals_bridge/flutnet_bridge.dart';
+import 'package:flutnet_animals_bridge/flutnet_animals/service_library/data/animal.dart';
 import 'package:flutnet_animals_bridge/flutnet_animals/service_library/services/generated/res_animal_service_get_animals.dart';
 import 'package:flutnet_animals_bridge/flutnet_animals/service_library/services/generated/cmd_animal_service_get_animals.dart';
-import 'package:flutnet_animals_bridge/flutnet_animals/service_library/data/animal.dart';
 import 'package:flutnet_animals_bridge/flutnet_animals/service_library/services/generated/res_animal_service_get_animal_kind.dart';
 import 'package:flutnet_animals_bridge/flutnet_animals/service_library/services/generated/cmd_animal_service_get_animal_kind.dart';
 

@@ -7,12 +7,12 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutnet_contact_list_bridge/flutnet/service_model/platform_operation_exception.dart';
 import 'package:flutnet_contact_list_bridge/flutnet_bridge.dart';
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
 import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/service/generated/res_contact_service_get_contacts.dart';
 import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/service/generated/cmd_contact_service_get_contacts.dart';
-import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact.dart';
+import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact_query_result.dart';
 import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/service/generated/res_contact_service_query_contacts.dart';
 import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/service/generated/cmd_contact_service_query_contacts.dart';
-import 'package:flutnet_contact_list_bridge/flutnet_contact_list/service_library/data/contact_query_result.dart';
 
 
 

@@ -11,6 +11,9 @@
     <AssemblyName>FlutnetVideoPlayer.PluginInterop</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <!-- Flutter 2 switched to XCFrameworks, however Xamarin has limited support for them -->
+    <!-- Please follow this discussion on how to handle this new format: https://github.com/xamarin/xamarin-macios/issues/10774 -->
+    <NoBindingEmbedding>true</NoBindingEmbedding>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,25 +51,25 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Flutnet.Interop.iOS">
-      <Version>1.22.6</Version>
+      <Version>2.0.4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Debug' ">
-    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Debug/FlutterPluginRegistrant.framework">
+    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Debug/FlutterPluginRegistrant.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
-    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Debug/video_player.framework">
+    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Debug/video_player.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>       
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)'=='Release' ">
-    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Release/FlutterPluginRegistrant.framework">
+    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Release/FlutterPluginRegistrant.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
-    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Release/video_player.framework">
+    <NativeReference Include="../Flutter/flutnet_video_player/build/ios/framework/Release/video_player.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>  
