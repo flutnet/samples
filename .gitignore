@@ -2,4 +2,6 @@
 **/obj
 **/.vs
 .DS_Store
+pubspec.lock
+
 
